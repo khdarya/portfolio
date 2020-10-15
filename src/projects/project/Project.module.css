@@ -14,6 +14,9 @@
     height: 400px;
     width: 100%;
     background-color: #c7c6c6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .view {
