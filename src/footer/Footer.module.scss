@@ -1,0 +1,40 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.footerBlock {
+    min-height: 90px;
+    background-color: $dgSecondColor;
+    .footerContainer {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        .footerName {
+            @include text($mainTitleFontFamily, 16px, 1.2);
+        }
+        .icons {
+            margin-top: 20px;
+
+            height: 30px;
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+            .icon {
+                @include text($titleFontFamily, 16px, 1.2);
+                color: #e3e0e0;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+

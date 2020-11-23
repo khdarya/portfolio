@@ -1,0 +1,62 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.contactsBlock {
+  height: 350px;
+  background-color: $bgColor;
+
+  .contactsContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+
+    .contactForm {
+      width: 70%;
+      background-color: $bgColor;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .formInput {
+        margin-bottom: 1rem;
+        background: $primaryColor;
+      }
+
+
+    }
+    .contactBtn {
+      display: block;
+      @include text($titleFontFamily, 16px, 1.2);
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 1px;
+      padding: 7px 20px;
+      transition: all 0.4s ease-in-out 0s;
+      background: transparent;
+      max-width: 170px;
+      margin: 15px auto;
+      z-index: 22;
+      text-align: center;
+      border-radius: 0px;
+      width: 100%;
+      border: none;
+      position: relative;
+      &::after {
+        box-sizing: border-box;
+      }
+    }
+
+  }
+
+}
+
+.contactForm input, .contactForm textarea {
+  width: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+  .contactForm {
+    width: 80%
+  }
+}

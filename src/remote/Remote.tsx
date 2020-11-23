@@ -1,13 +1,14 @@
 import React from 'react';
-import style from './Remote.module.css';
+import style from './Remote.module.scss';
 import styleContainer from "../common/styles/Container.module.css";
+import Title from "../common/components/title/Title";
 
 function Remote() {
     return (
         <div className={style.remoteBlock}>
             <div className={`${styleContainer.container} ${style.remoteContainer}`}>
-                <span>Open for remote position</span>
-                <button>Hire me</button>
+                <Title text={'Open for remote position'}/>
+                <button className={style.hireBtn}>HIRE ME</button>
             </div>
         </div>
     );

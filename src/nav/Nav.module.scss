@@ -1,0 +1,14 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.nav {
+    border: 1px solid $dgSecondColor;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+
+   .linkText {
+       text-decoration: none;
+       @include text($titleFontFamily, 16px, 1.2);
+   }
+}
