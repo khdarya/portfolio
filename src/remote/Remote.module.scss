@@ -4,15 +4,16 @@
 
 .remoteBlock {
     min-height: 100px;
-    background-color: $dgSecondColor;
+    background-color: $thirdLight;
     .remoteContainer {
         display: flex;
         flex-direction: column;
         text-align: center;
+
     }
     .hireBtn {
         display: block;
-        @include text($titleFontFamily, 16px, 1.2);
+        @include text($titleFontFamily, 16px, 1.2, $textColor) ;
         text-transform: uppercase;
         text-decoration: none;
         letter-spacing: 1px;
@@ -27,8 +28,22 @@
         width: 100%;
         border: none;
         position: relative;
+        outline: 1px solid transparent;
         &::after {
-            box-sizing: border-box;
+            content: "";
+            position: absolute;
+            bottom: 0;
+            height: 10px;
+            width: 50%;
+            background: #cdc7c7;
+            z-index: -1;
+            transition: all 0.2s ease-in-out 0s;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+        &:hover::after {
+            height: 100%;
+            width: 100%;
         }
     }
 }

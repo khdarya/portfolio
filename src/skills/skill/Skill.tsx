@@ -17,9 +17,7 @@ function Skill(props: SkillProps) {
             <div className={style.skillInfo}>
                 <h3 className={style.skillTitle}>{props.title}</h3>
                 <span className={style.skillDescription}>{props.description}</span>
-
             </div>
-
         </div>
     );
 }

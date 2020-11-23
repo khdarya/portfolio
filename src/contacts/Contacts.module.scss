@@ -12,7 +12,7 @@
     justify-content: space-between;
 
     .contactForm {
-      width: 70%;
+      width: 50%;
       background-color: $bgColor;
       display: flex;
       flex-direction: column;
@@ -21,13 +21,37 @@
       .formInput {
         margin-bottom: 1rem;
         background: $primaryColor;
+        width: 100%;
+        outline: 1px solid transparent;
+
+
+          border: 0;
+          -webkit-text-fill-color: $dgSecondColor;
+          -webkit-box-shadow: 0 0 0 1000px $primaryColor inset;
+          transition: background-color 5000s ease-in-out 0s;
+          background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,174,255,0.04) 50%,rgba(255,255,255,0) 51%,rgba(0,174,255,0.03) 100%);
+
+
       }
+      @media screen and (max-width: 600px) {
+          width: 100%
+      }
+
+      //.contactForm input, .contactForm textarea {
+      //  width: 100%;
+      //}
+      //
+      //@media screen and (max-width: 1300px) {
+      //  .contactForm {
+      //    width: 100%
+      //  }
+      //}
 
 
     }
     .contactBtn {
       display: block;
-      @include text($titleFontFamily, 16px, 1.2);
+      @include text($titleFontFamily, 16px, 1.2, $textColor);
       text-transform: uppercase;
       text-decoration: none;
       letter-spacing: 1px;
@@ -42,8 +66,22 @@
       width: 100%;
       border: none;
       position: relative;
+      outline: 1px solid transparent;
       &::after {
-        box-sizing: border-box;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        height: 10px;
+        width: 50%;
+        background: #cdc7c7;
+        z-index: -1;
+        transition: all 0.2s ease-in-out 0s;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+      &:hover::after {
+        height: 100%;
+        width: 100%;
       }
     }
 
@@ -51,12 +89,3 @@
 
 }
 
-.contactForm input, .contactForm textarea {
-  width: 100%;
-}
-
-@media screen and (max-width: 1300px) {
-  .contactForm {
-    width: 80%
-  }
-}

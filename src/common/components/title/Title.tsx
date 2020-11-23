@@ -4,6 +4,7 @@ import style from './Title.module.scss';
 
 type TitleType = {
     text: string
+
 }
 
 function Title(props: TitleType) {

@@ -1,8 +1,9 @@
 @import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
 
 .projectsBlock {
   min-height: 100vh;
-  background-color: $bgColor;
+  background-color: $secondLight;
   padding: 100px 0;
 
   .projectContainer {
@@ -18,10 +19,15 @@
       margin-top: 30px;
       align-items: flex-start;
 
-      @media screen and (max-width: 1129px) {
+      @media screen and (max-width: 1500px) {
         justify-content: center
       }
     }
   }
 }
 
+//@media screen and (max-width: 1129px) {
+//  .projects {
+//    justify-content: center
+//  }
+//}

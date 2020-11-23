@@ -2,6 +2,7 @@
 @import "../../common/styles/sass/mixins";
 
 .skill {
+  padding-top: 30px;
   width: 250px;
   background-color: $dgSecondColor;
   display: flex;
@@ -30,12 +31,12 @@
 
   .skillInfo {
     .skillTitle {
-      @include text($mainTitleFontFamily, 16px, 1.2);
+      @include text($mainTitleFontFamily, 16px, 1.2, $textColor);
       letter-spacing: 1px;
     }
 
     .skillDescription {
-      @include text($titleFontFamily, 16px, 1.2);
+      @include text($titleFontFamily, 16px, 1.2, $textColor);
     }
   }
 }

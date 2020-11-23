@@ -11,7 +11,7 @@
         text-align: center;
         justify-content: space-between;
         .footerName {
-            @include text($mainTitleFontFamily, 16px, 1.2);
+            @include text($mainTitleFontFamily, 16px, 1.2, $textColor);
         }
         .icons {
             margin-top: 20px;
@@ -21,7 +21,7 @@
             display: flex;
             justify-content: space-between;
             .icon {
-                @include text($titleFontFamily, 16px, 1.2);
+                @include text($titleFontFamily, 16px, 1.2, $textColor);
                 color: #e3e0e0;
             }
         }
