@@ -16,12 +16,10 @@ function Skills() {
             <div className={`${styleContainer.container} ${style.skillContainer}`}>
                 <Title text={"Skills"}/>
                 <div className={style.skills}>
-                    <Skill fa={faJs} title={"Js"} description={"is high-level, often just-in-time compiled, and multi-paradigm"}/>
-                    <Skill fa={faSass} title={"Css"} description={"is the language we use to style an HTML document"}/>
-
-
+                    <Skill fa={faJs} title={"Js"} description={"Strong knowledge in JavaScript using Closure, Promise, Inheritance and experience in both Object-Oriented Programming and Functional Reactive Programming. JS books are my desk books: Eloquent-Javascript, developer.mozilla.org, learn.javascript.ru. My resolved katas are in codewars.com/users/DaryaKha"}/>
+                    <Skill fa={faSass} title={"Css"} description={"Web development skills with HTML/HTML5, CSS/CSS3, Less/Sass, Bootstrap. Experience in responsive web pages design with Media Queries, CSS Grid Layout and Flexbox"}/>
                     <Skill fa={faReact} title={"React"}
-                           description={"is an open-source, front end, JavaScript library for building user interfaces or UI component"}/>
+                           description={"Confident understanding of the concept of react-redux architecture. Experience in using Redux to manage the application state and applying middleware such as redux-promise, redux-thunk and redux-saga."}/>
                 </div>
             </div>
         </div>

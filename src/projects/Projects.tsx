@@ -5,6 +5,7 @@ import Project from "./project/Project";
 import Title from "../common/components/title/Title";
 import todoImage from './../assets/image/calendar-in-docs-sheets-header.jpg';
 import socialImage from './../assets/image/sn1.jpg';
+import trainingCardsImage from './../assets/image/trainingImg.jpg'
 
 
 
@@ -16,14 +17,18 @@ function Projects() {
     const todoList = {
         backgroundImage: `url(${todoImage})`,
     };
+    const trainingCards = {
+        backgroundImage: `url(${trainingCardsImage})`,
+    }
 
     return (
         <div className={style.projectsBlock}>
             <div className={`${styleContainer.container} ${style.projectContainer}`}>
                <Title text={"Projects"}/>
                 <div className={style.projects}>
-                    <Project style={social} title={"Social Network"} projDescription={"Short description1 Short description1 Short description1Short description1 Short description1"}/>
-                    <Project style={todoList} title={"Todo List"} projDescription={"Short description1"}/>
+                    <Project projectLink={"https://khdarya.github.io/way-of-samurai-react-100"} style={social} title={"Social Network"} projDescription={"Development of Social Network using React, Redux. Application authorization. Profile editing, navigation through user pages, subscribe/unsubscribe users, adding posts;"}/>
+                    <Project projectLink={"https://khdarya.github.io/it-incubator-todolist-ts-16"} style={todoList} title={"Todo List"} projDescription={"Development To Do list using React, Redux. Application authorization. Adding, editing, deletion to do lists and tasks; using MaterialUI, formik, storybook;"}/>
+                    <Project projectLink={"https://sshaporov.github.io/friday"} style={trainingCards} title={"Training Cards"} projDescription={"Development training cards application using Redux, React (team development). Responsibilities are: registration page, searching, sorting, pagination, editing cards, error processing, modals implementation, css markup. The application is built on Heroku platform;"}/>
                 </div>
             </div>
         </div>

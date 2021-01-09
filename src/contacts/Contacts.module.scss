@@ -50,6 +50,7 @@
 
     }
     .contactBtn {
+      margin-top: 10px;
       display: block;
       @include text($titleFontFamily, 16px, 1.2, $textColor);
       text-transform: uppercase;
