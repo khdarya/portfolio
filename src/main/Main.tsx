@@ -6,10 +6,10 @@ function Main() {
     return (
         <div className={style.mainBlock}>
             <div className={styleContainer.container} >
-            <div className={style.text}>
+            <div className={style.greeting}>
                 <span className={style.hiText}>Hi There</span>
-                <h1 className={style.introText}>I am Darya Khakhlova</h1>
-                <p className={style.devText}>A Front-End Developer</p>
+                <span>I am Darya <span>Khakhlova</span></span>
+                <h1>A Front-End Developer</h1>
             </div>
             <div className={style.photo}>
             </div>
