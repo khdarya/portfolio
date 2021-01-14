@@ -12,6 +12,9 @@ function Main() {
                 <h1>A Front-End Developer</h1>
             </div>
             <div className={style.photo}>
+                <div className={style.image}>
+
+                </div>
             </div>
             </div>
         </div>
