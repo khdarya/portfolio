@@ -8,15 +8,9 @@
 
   @include flex(row, center, center, nowrap);
   padding: 100px 0;
-
-  //.container {
-  //  @include container();
     @include flex(row, space-around, center, wrap);
 
     .greeting {
-      //min-width: 300px;
-      //background-color: $bgColor;
-
       @include flex(column, flex-start, flex-start, nowrap);
 
       span {
@@ -50,35 +44,15 @@
       }
 
       @media screen and (max-width: 1143px) {
-        aligh-items: center
+        align-items: center
       }
 
       .hiText {
         @include text($titleFontFamily, 18px, 1.2, $textColor);
       }
-      //
-      //.introText {
-      //  @include text($mainTitleFontFamily, 36px, 1.2, $textColor);
-      //  font-weight: 300;
-      //  text-transform: capitalize;
-      //  letter-spacing: 5px;
-      //  position: relative;
-      //}
-      //
-      //.devText {
-      //  @include text($titleFontFamily, 20px, 1.2, $textColor);
-      //}
-
-
   }
 
   .photo {
-    //width: 300px;
-    //height: 400px;
-    //background-color: $bgColor;
-    //border: 5px solid $primaryColor;
-
-
     position: relative;
     z-index: 1;
     @media screen and (max-width: 1144px) {
