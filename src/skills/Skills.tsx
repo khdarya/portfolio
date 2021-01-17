@@ -10,14 +10,16 @@ import {faBootstrap} from '@fortawesome/free-brands-svg-icons';
 import {faVuejs} from '@fortawesome/free-brands-svg-icons';
 import {faNodeJs} from '@fortawesome/free-brands-svg-icons';
 
-
+import { Fade } from "react-awesome-reveal";
 
 function Skills() {
 
     return (
         <div className={style.skillsBlock}>
             <div className={`${styleContainer.container} ${style.skillContainer}`}>
+                <Fade>
                 <Title text={"Skills"}/>
+                </Fade>
                 <div className={style.skills}>
                     <Skill fa={faJs} title={"Js"} description={"Strong knowledge in JavaScript using Closure, Promise, Inheritance and experience in both Object-Oriented Programming and Functional Reactive Programming. JS books are my desk books: Eloquent-Javascript, developer.mozilla.org, learn.javascript.ru. My resolved katas are in codewars.com/users/DaryaKha"}/>
                     <Skill fa={faSass} title={"Css"} description={"Web development skills with HTML/HTML5, CSS/CSS3, Less/Sass, Bootstrap. Experience in responsive web pages design with Media Queries, CSS Grid Layout and Flexbox"}/>

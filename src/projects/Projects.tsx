@@ -6,8 +6,7 @@ import Title from "../common/components/title/Title";
 import todoImage from './../assets/image/calendar-in-docs-sheets-header.jpg';
 import socialImage from './../assets/image/sn1.jpg';
 import trainingCardsImage from './../assets/image/trainingImg.jpg'
-
-
+import { Fade } from "react-awesome-reveal";
 
 function Projects() {
 
@@ -24,7 +23,10 @@ function Projects() {
     return (
         <div className={style.projectsBlock}>
             <div className={`${styleContainer.container} ${style.projectContainer}`}>
-               <Title text={"Projects"}/>
+               <Fade>
+                   <Title text={"Projects"}/>
+               </Fade>
+
                 <div className={style.projects}>
                     <Project projectLink={"https://khdarya.github.io/way-of-samurai-react-100"} style={social} title={"Social Network"} projDescription={"Development of Social Network using React, Redux. Application authorization. Profile editing, navigation through user pages, subscribe/unsubscribe users, adding posts;"}/>
                     <Project projectLink={"https://khdarya.github.io/it-incubator-todolist-ts-16"} style={todoList} title={"Todo List"} projDescription={"Development To Do list using React, Redux. Application authorization. Adding, editing, deletion to do lists and tasks; using MaterialUI, formik, storybook;"}/>
