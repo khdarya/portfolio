@@ -36,12 +36,17 @@
             }
           }
         }
+        &:nth-child(3) {
+          @include text($mainTitleFontFamily, 20px, 1.2, $textColor);
+          letter-spacing: 5px;
+          margin: 0;
+        }
       }
-      h1 {
-        @include text($mainTitleFontFamily, 20px, 1.2, $textColor);
-        letter-spacing: 5px;
-        margin: 0;
-      }
+      //&:nth-child(3) {
+      //  @include text($mainTitleFontFamily, 20px, 1.2, $textColor);
+      //  letter-spacing: 5px;
+      //  margin: 0;
+      //}
 
       @media screen and (max-width: 1143px) {
         align-items: center
